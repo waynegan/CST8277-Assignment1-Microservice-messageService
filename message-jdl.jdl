@@ -1,0 +1,33 @@
+
+
+
+// Message Microservice
+application {
+  config {
+    baseName messageService
+    applicationType microservice
+    packageName com.epicwuxia.messageservice
+    serverPort 8082
+    prodDatabaseType mongodb
+    devDatabaseType mongodb
+  }
+}
+
+entity Message {
+  content String required
+  authorId String required
+  createdAt Instant
+  updatedAt Instant
+}
+
+entity Subscription {
+  subscriberId String required
+  producerId String required
+  createdAt Instant
+}
+
+
+// Options
+dto * with mapstruct
+service * with serviceClass
+search * with elasticsearch
