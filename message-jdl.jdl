@@ -6,7 +6,7 @@ application {
   config {
     baseName messageService
     applicationType microservice
-    packageName com.epicwuxia.messageservice
+    packageName org.cst8277.GanWei.messageservice
     serverPort 8082
     prodDatabaseType mongodb
     devDatabaseType mongodb

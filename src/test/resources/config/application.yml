@@ -15,7 +15,7 @@
 
 mongock:
   migration-scan-package:
-    - com.epicwuxia.messageservice.config.dbmigrations
+    - org.cst8277.GanWei.messageservice.config.dbmigrations
   mongo-db:
     read-concern: local
     write-concern:
